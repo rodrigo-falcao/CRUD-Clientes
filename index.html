@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - TESTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro dos Clientes</h1>
+    </header>
+
+    <main>
+        <button type="button" class="button buttonNew" id="newRegister"> Cadastrar novo cliente</button>
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>maria@gmail.com</td>
+                    <td>(13) 99185-5616</td>
+                    <td>Praia Grande</td>
+                    <td>São Paulo</td>
+                    <td>
+                        <button type="button" class="button buttonGreen">Editar</button>
+                        <button type="button" class="button buttonRed">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Felipe</td>
+                    <td>felipe@hotmail.com</td>
+                    <td>(13) 3566-5556</td>
+                    <td>Santos</td>
+                    <td>São Paulo</td>
+                    <td>
+                        <button type="button" class="button buttonGreen">Editar</button>
+                        <button type="button" class="button buttonRed">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>joão</td>
+                    <td>joao@uol.com.br</td>
+                    <td>(11) 98854-7746</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                    <td >
+                        <button type="button" class="button buttonGreen">Editar</button>
+                        <button type="button" class="button buttonRed">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
+                    <input type="email" class="modal-field" placeholder="E-mail do Cliente">
+                    <input type="text" class="modal-field" placeholder="Celular do Cliente">
+                    <input type="text" class="modal-field" placeholder="Cidade do Cliente">
+                    <input type="text" class="modal-field" placeholder="Estado do Cliente">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button buttonGreen">Salvar</button>
+                    <button class="button buttonNew">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        CROD
+    </footer>
+</body>
+</html>
