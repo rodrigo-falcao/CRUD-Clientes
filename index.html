@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD - EMPRESA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="main.js" defer></script>
 </head>
 <body>
     <header>
+        <span class="material-symbols-outlined">
+            table_chart
+            </span>
         <h1>Cadastro dos Clientes</h1>
     </header>
     <main>
-        <button type="button" class="button buttonNew" id="newRegister"> Cadastrar novo cliente</button>
-        <table class="records">
+        <button type="button" class="button buttonNew mobile" id="newRegister"> Cadastrar novo cliente</button>
+        <table id="tbClient" class="records">
             <thead>
                 <tr>
+                    <th >ID</th>
                     <th>Nome</th>
                     <th>E-mail</th>
                     <th>Celular</th>
@@ -29,39 +34,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Maria</td>
-                    <td>maria@gmail.com</td>
-                    <td>(13) 99185-5616</td>
-                    <td>Praia Grande</td>
-                    <td>São Paulo</td>
-                    <td>
-                        <button type="button" class="button buttonGreen">Editar</button>
-                        <button type="button" class="button buttonRed">Excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Felipe</td>
-                    <td>felipe@hotmail.com</td>
-                    <td>(13) 3566-5556</td>
-                    <td>Santos</td>
-                    <td>São Paulo</td>
-                    <td>
-                        <button type="button" class="button buttonGreen">Editar</button>
-                        <button type="button" class="button buttonRed">Excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>joão</td>
-                    <td>joao@uol.com.br</td>
-                    <td>(11) 98854-7746</td>
-                    <td>São Paulo</td>
-                    <td>São Paulo</td>
-                    <td >
-                        <button type="button" class="button buttonGreen">Editar</button>
-                        <button type="button" class="button buttonRed">Excluir</button>
-                    </td>
-                </tr>
+
             </tbody>
         </table>
         <div class="modal" id="modal">
@@ -70,16 +43,16 @@
                     <h2>Novo Cliente</h2>
                     <span class="modal-close" id="modalClose">&#10006</span>
                 </header>
-                <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
-                    <input type="email" class="modal-field" placeholder="E-mail do Cliente">
-                    <input type="text" class="modal-field" placeholder="Celular do Cliente">
-                    <input type="text" class="modal-field" placeholder="Cidade do Cliente">
-                    <input type="text" class="modal-field" placeholder="Estado do Cliente">
+                <form id="form-princ" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="E-mail do Cliente" required>
+                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
+                    <input type="text" id="estado" class="modal-field" placeholder="Estado do Cliente" required>
                 </form>
                 <footer class="modal-footer">
-                    <button class="button buttonGreen">Salvar</button>
-                    <button class="button buttonNew">Cancelar</button>
+                    <button id="save" class="button buttonGreen">Salvar</button>
+                    <button id="cancelar" class="button buttonNew">Cancelar</button>
                 </footer>
             </div>
         </div>
