@@ -1,6 +1,6 @@
 <h1>CRUD Empresa</h1>
 
-  Este é um projeto de um CRUD (Create, Read, Update e Delete) desenvolvido em HTML, CSS e JavaScript. 
+Este é um projeto de um CRUD desenvolvido em HTML, CSS e JavaScript.<br>
 Ele permite a criação, leitura, atualização e exclusão de registros de clientes em uma tabela.
 Entrega também o controle por número de ID para cada novo registro, fazendo a substituição quando ocorre deleção e criação de um novo registro e vai guardar as informações através do localStorage.
 
