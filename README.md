@@ -2,7 +2,7 @@
 
   Este é um projeto de um CRUD (Create, Read, Update e Delete) desenvolvido em HTML, CSS e JavaScript. 
 Ele permite a criação, leitura, atualização e exclusão de registros de clientes em uma tabela.
-Entrega também o controle por número de ID para cada novo registro, fazendo a substituição quando ocorre deleção e criação de um novo registro.
+Entrega também o controle por número de ID para cada novo registro, fazendo a substituição quando ocorre deleção e criação de um novo registro e vai guardar as informações através do localhost.
 
 ![image](https://user-images.githubusercontent.com/125101340/236071964-2c9ab0f3-6adb-43de-a941-748d3d2d9674.png)
 
@@ -18,7 +18,7 @@ Entrega também o controle por número de ID para cada novo registro, fazendo a 
 <li>Excluir registros de clientes da tabela.</li>
 
 <h2>Como utilizar</h2>
-Para utilizar o site, basta clonar o repositório, abrir o arquivo index.html em seu navegador e vai guardar as informações através do localhost.
+Para utilizar o site, basta clonar o repositório, abrir o arquivo index.html em seu navegador.
 
 <h2>Autoria</h2>
 O site foi desenvolvido como exercício, através do canal do <b>Fernando Leonid</b> no Youtube. 
