@@ -18,7 +18,7 @@ Entrega também o controle por número de ID para cada novo registro, fazendo a 
 <li>Excluir registros de clientes da tabela.</li>
 
 <h2>Como utilizar</h2>
-Para utilizar o site, basta clonar o repositório, abrir o arquivo index.html em seu navegador e acessá-lo através do localhost:5500.
+Para utilizar o site, basta clonar o repositório, abrir o arquivo index.html em seu navegador e vai guardar as informações através do localhost.
 
 <h2>Autoria</h2>
 O site foi desenvolvido como exercício, através do canal do <b>Fernando Leonid</b> no Youtube. 
